@@ -1,0 +1,37 @@
+name: Feature request
+description: Suggest an improvement or new workflow for Divine
+title: "[Feature]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an idea for Divine? Tell us what you are trying to accomplish and why it would help your Roblox development workflow.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: Describe the workflow, limitation, or problem you want Divine to handle better.
+    validations:
+      required: true
+
+  - type: textarea
+    id: ideal
+    attributes:
+      label: What would the ideal experience look like?
+      description: Walk us through how you imagine using it.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current
+    attributes:
+      label: How do you handle this today?
+      description: Tell us about any current workaround or why the task is difficult.
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Mockups, screenshots, examples, or related tools are useful here.
