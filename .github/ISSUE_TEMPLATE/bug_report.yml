@@ -1,0 +1,74 @@
+name: Bug report
+description: Report something in Divine that is not working correctly
+title: "[Bug]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us improve Divine. Please include enough detail for us to reproduce the problem. Do not post API keys, access tokens, credentials, or private project data.
+
+  - type: input
+    id: divine-version
+    attributes:
+      label: Divine version
+      description: The version or build you were using when this happened.
+      placeholder: e.g. 0.x.x
+    validations:
+      required: true
+
+  - type: input
+    id: studio-version
+    attributes:
+      label: Roblox Studio version
+      description: If the issue involves Studio, include its version if known.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Desktop app / UI
+        - Roblox Studio connection
+        - Studio plugin
+        - Agent / task execution
+        - Image references
+        - Plugin installation or update
+        - Developer Observability
+        - Packaging / startup
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open Divine...
+        2. Connect Studio...
+        3. Run...
+        4. See error...
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or errors
+      description: Paste only the relevant section. Remove secrets and private project information first.
+      render: shell
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Anything else?
+      description: Screenshots, frequency, workarounds, or other useful context.
